@@ -1,0 +1,14 @@
+* docs
+** game-engine
+ [[https://pkgs.racket-lang.org/package/game-engine]]
+[[./doc/game-engine.pdf]]
+*** demos
+ [[https://github.com/thoughtstem/game-engine-demos]]
+[[./doc/character-generators.pdf]]
+** Realm of racket
+*** Source code
+    :PROPERTIES:
+    :ORDERED:  t
+    :END:
+ on apt systems
+ [[/usr/share/racket/pkgs/realm]]
