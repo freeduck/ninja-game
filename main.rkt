@@ -57,7 +57,8 @@
                     "ship"
                     #:position
                     (posn 100 100)
-                    #:components (key-movement 5)
+                    #:components
+                    (key-movement 5)
                     (physical-collider)))
 
   (start-game (instructions WIDTH HEIGHT "Use arrow keys to move")
