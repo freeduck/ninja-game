@@ -3,4 +3,8 @@
 .\#*
 .DS_Store
 compiled/
-/doc/
+!/doc
+/doc/*
+!/doc/game-engine.pdf
+!/doc/character-generators.pdf
+
