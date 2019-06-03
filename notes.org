@@ -12,3 +12,14 @@
     :END:
  on apt systems
  [[/usr/share/racket/pkgs/realm]]
+** clang / llvm
+** packages
+https://apt.llvm.org/
+** update-alternatives
+using clang-7 as alternative
+#+BEGIN_SRC sh
+  find /usr/bin/ -name "clang*"|awk 'BEGIN{FS="/"} {base=$4; sub(/-7/,"",base); print "update-alternatives --install /usr/local/bin/" base " " base " " "/usr/bin/" $4 " 1"}' > ~/clang
+#+END_SRC
+** ldconfig
+export PATH=/sbin:$PATH
+
