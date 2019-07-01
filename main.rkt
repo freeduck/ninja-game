@@ -45,7 +45,7 @@
            game-engine-demos-common)
   (define WIDTH 640)
   (define HEIGHT 480)
-  (define peter (bitmap "img/peter_lines_clean.png"))
+  (define peter (bitmap "img/club.png"))
   (define bg-entity
     (sprite->entity (rectangle WIDTH HEIGHT "solid" "white")
                     #:name
@@ -58,7 +58,7 @@
                     #:position
                     (posn 100 100)
                     #:components
-                    (key-movement 5)
+                    (key-movement 20)
                     (physical-collider)))
 
   (start-game (instructions WIDTH HEIGHT "Use arrow keys to move")
