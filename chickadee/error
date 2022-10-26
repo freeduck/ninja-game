@@ -1,0 +1,42 @@
+[ALSOFT] (EE) Failed to set real-time priority for thread: Operation not permitted (1)
+[ALSOFT] (EE) Failed to set real-time priority for thread: Operation not permitted (1)
+;;; WARNING: loading compiled file /home/kristian/Downloads/chickadee-0.9.0/chickadee/config.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /home/kristian/Downloads/chickadee-0.9.0/chickadee/utils.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /home/kristian/Downloads/chickadee-0.9.0/chickadee/game-loop.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /usr/local/lib/guile/3.0/ccache/gl.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /usr/local/lib/guile/3.0/ccache/gl/runtime.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /usr/local/lib/guile/3.0/ccache/gl/types.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /usr/local/lib/guile/3.0/ccache/gl/enums.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+;;; WARNING: loading compiled file /usr/local/lib/guile/3.0/ccache/gl/low-level.go failed:
+;;; In procedure load-thunk-from-memory: not an ELF file
+Backtrace:
+In ice-9/boot-9.scm:
+  1752:10 10 (with-exception-handler _ _ #:unwind? _ # _)
+In unknown file:
+           9 (apply-smob/0 #<thunk 7f0e24db0080>)
+In ice-9/boot-9.scm:
+    724:2  8 (call-with-prompt _ _ #<procedure default-prompt-handle…>)
+In ice-9/eval.scm:
+    619:8  7 (_ #(#(#<directory (guile-user) 7f0e24db5c80>)))
+In ice-9/boot-9.scm:
+   2835:4  6 (save-module-excursion _)
+  4380:12  5 (_)
+In chickadee.scm:
+   298:14  4 (run-game #:window-title _ #:window-width _ # _ # _ # _ …)
+In chickadee/graphics/engine.scm:
+   197:40  3 (make-graphics-engine #<gl-context 556e8dfed780>)
+In gl/low-level.scm:
+  10248:0  2 (trampoline 7938)
+In unknown file:
+           1 (dynamic-pointer "glGetString" #<<foreign-library> file…>)
+           0 (dlsym #<pointer 0x7f0e367672a0> "glGetString")
+
+ERROR: In procedure dlsym:
+In procedure dlsym: Error resolving "glGetString": "guile: undefined symbol: glGetString"
